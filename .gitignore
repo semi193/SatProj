@@ -6,3 +6,6 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+# Visual Studio temporary files
+.vs/
+*.vsidx
