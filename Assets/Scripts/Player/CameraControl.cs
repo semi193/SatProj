@@ -11,13 +11,16 @@ public class CameraControl : MonoBehaviour
     [SerializeField] float _sensitivity = 0.15f;
     [SerializeField] float _minPitch = -60f;
     [SerializeField] float _maxPitch = 60f;
+    [SerializeField] float _distanceVelocity = 0f;
+    [SerializeField] float _smoothTime = 0.2f;
 
     [Header("Lock-On")]
     [SerializeField] float _maxDistance = 20f;
     [SerializeField] float _breakDistance = 30f;     // если цель дальше Ч сбрасываем
     [SerializeField] float _maxAngle = 60f;          // конус поиска
-    [SerializeField] float _lockSmoothing = 12f;     // скорость наведени€
     [SerializeField] float _targetAimHeight = 1f;    // куда смотреть у цели
+    [SerializeField] float _yawVelocity = 0f;
+    [SerializeField] float _pitchVelocity = 0f;
     [SerializeField] LayerMask _targetMask;
 
     [Header("Collision")]
@@ -25,10 +28,10 @@ public class CameraControl : MonoBehaviour
     [SerializeField] float _collisionRadius = 0.25f;  // радиус Ђшарикаї камеры
     [SerializeField] float _collisionPadding = 0.05f; // зазор до стены
     [SerializeField] float _minDistance = 0.3f;       // чтобы камера не въехала в игрока
-    [SerializeField] float _returnSpeed = 8f;         // плавность возврата назад
 
     private Vector3 _cameraLocalOffset;   // стартовое смещение камеры от пивота
     private float _currentDistance;       // текуща€ дистанци€ (дл€ сглаживани€)
+    
 
     public Transform Target { get; private set; }
     public bool HasTarget => Target != null;
@@ -87,14 +90,14 @@ public class CameraControl : MonoBehaviour
     private void LockedRotation()
     {
         Vector3 aimPoint = Target.position + Vector3.up * _targetAimHeight;
-        Vector3 dir = (aimPoint - transform.position).normalized;
+        Vector3 dir = (aimPoint - _camera.transform.position).normalized;
 
         float targetYaw = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
         float targetPitch = -Mathf.Asin(dir.y) * Mathf.Rad2Deg;
         targetPitch = Mathf.Clamp(targetPitch, _minPitch, _maxPitch);
 
-        _yaw = Mathf.LerpAngle(_yaw, targetYaw, Time.deltaTime * _lockSmoothing);
-        _pitch = Mathf.LerpAngle(_pitch, targetPitch, Time.deltaTime * _lockSmoothing);
+        _yaw = Mathf.SmoothDampAngle(_yaw, targetYaw, ref _yawVelocity, _smoothTime);
+        _pitch = Mathf.SmoothDampAngle(_pitch, targetPitch, ref _pitchVelocity, _smoothTime);
     }
 
     private void _pivotSnap()
@@ -158,8 +161,7 @@ public class CameraControl : MonoBehaviour
         if (targetDistance < _currentDistance)
             _currentDistance = targetDistance;                          // мгновенно прижались
         else
-            _currentDistance = Mathf.Lerp(_currentDistance, targetDistance,
-                                          Time.deltaTime * _returnSpeed);
+            _currentDistance = Mathf.SmoothDamp(_currentDistance, targetDistance, ref _distanceVelocity, _smoothTime);
 
         // —тавим камеру в мировую позицию Ч Unity сам пересчитает localPosition
         _camera.transform.position = origin + worldDir * _currentDistance;

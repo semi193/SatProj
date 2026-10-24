@@ -367,13 +367,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.17364816, y: -0, z: -0, w: 0.9848078}
-  m_LocalPosition: {x: 0, y: 6, z: -8}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 639801949}
-  m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -564,14 +564,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 639801948}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
   m_LocalPosition: {x: 0, y: 1.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 330585546}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
 --- !u!114 &639801950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -590,11 +590,14 @@ MonoBehaviour:
   _sensitivity: 0.15
   _minPitch: -60
   _maxPitch: 60
+  _distanceVelocity: 0
+  _smoothTime: 0.2
   _maxDistance: 20
   _breakDistance: 30
   _maxAngle: 60
-  _lockSmoothing: 12
   _targetAimHeight: 1
+  _yawVelocity: 0
+  _pitchVelocity: 0
   _targetMask:
     serializedVersion: 2
     m_Bits: 128
@@ -604,7 +607,6 @@ MonoBehaviour:
   _collisionRadius: 0.25
   _collisionPadding: 0.05
   _minDistance: 0.3
-  _returnSpeed: 8
 --- !u!1 &754844908
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,7 +1151,7 @@ Transform:
   m_GameObject: {fileID: 1292749195}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 7}
+  m_LocalPosition: {x: 0, y: 4, z: 7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
