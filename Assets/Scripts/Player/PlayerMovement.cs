@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Windows;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float _rotationSpeed = 12f;   // градусов/сек
 
     private static readonly int AnimMoveX = Animator.StringToHash("MoveX");
+    private static readonly int AnimMoveSpeed = Animator.StringToHash("MoveSpeed");
 
     private void Awake()
     {
@@ -36,18 +38,29 @@ public class PlayerMovement : MonoBehaviour
         bool hasInput = moveDir.sqrMagnitude > 0.01f;
         bool running = hasInput && _input.runHeld;
 
-        Move(moveDir, hasInput, running);
+        Move(moveDir, hasInput, running, input);
 
         Rotate(moveDir, running);
     }
 
-    private void Move(Vector3 moveDir, bool hasInput, bool running)
+    private void Move(Vector3 moveDir, bool hasInput, bool running, Vector3 input)
     {
         float speed = running ? _runSpeed : _walkSpeed;
 
         Vector3 velocity = hasInput ? moveDir.normalized * speed : Vector3.zero;
-        velocity.y = _rb.linearVelocity.y;   // сохраняем гравитацию / прыжок
+        velocity.y = _rb.linearVelocity.y;
         _rb.linearVelocity = velocity;
+
+        if (_camera.HasTarget && !running && input.y < 0)
+        {
+            _animator.SetFloat(AnimMoveSpeed, -1);
+        }
+        else
+        {
+            _animator.SetFloat(AnimMoveSpeed, speed / _walkSpeed);
+        }
+
+        _animator.SetFloat(AnimMoveX, velocity.sqrMagnitude);
     }
 
     private void Rotate(Vector3 moveDir, bool running)
@@ -61,8 +74,6 @@ public class PlayerMovement : MonoBehaviour
         }
 
         faceDir.y = 0f;
-
-        _animator.SetFloat(AnimMoveX, faceDir.sqrMagnitude);
 
         if (faceDir.sqrMagnitude < 0.0001f) return;
 

@@ -9,6 +9,7 @@ public class CameraControl : MonoBehaviour
 
     [Header("Look")]
     [SerializeField] float _sensitivity = 0.15f;
+    [SerializeField] float _offset = 3f;
     [SerializeField] float _minPitch = -60f;
     [SerializeField] float _maxPitch = 60f;
     [SerializeField] float _distanceVelocity = 0f;
@@ -101,7 +102,7 @@ public class CameraControl : MonoBehaviour
 
     private void _pivotSnap()
     {
-        transform.position = _player.position;
+        transform.position = _player.position + new Vector3(0, _offset, 0);
         transform.rotation = Quaternion.Euler(_pitch, _yaw, 0f);
     }
 
@@ -143,7 +144,7 @@ public class CameraControl : MonoBehaviour
         if (desired < 0.001f) return;
 
         // Направление и точка старта — в мировых координатах
-        Vector3 origin = transform.position;                             // пивот = голова
+        Vector3 origin = transform.position;
         Vector3 worldDir = transform.TransformDirection(_cameraLocalOffset.normalized);
 
         float targetDistance = desired;
