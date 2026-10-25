@@ -1,11 +1,12 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CameraControl : MonoBehaviour
 {
     [Header("Refs")]
     [SerializeField] Transform _player;
-    [SerializeField] PlayerInput _input;
     [SerializeField] Camera _camera;                 // сама камера (ребёнок пивота)
+    [SerializeField] MyInputs _myInputs;
 
     [Header("Look")]
     [SerializeField] float _sensitivity = 0.15f;
@@ -31,6 +32,7 @@ public class CameraControl : MonoBehaviour
 
     private Vector3 _cameraLocalOffset;   // стартовое смещение камеры от пивота
     private float _currentDistance;       // текущая дистанция (для сглаживания)
+
     
 
     public Transform Target { get; private set; }
@@ -57,7 +59,7 @@ public class CameraControl : MonoBehaviour
     private void Update()
     {
         // Переключение лока
-        if (_input.ConsumeLockPressed())
+        if (_myInputs.ConsumeLockPressed())
             Target = HasTarget ? null : FindTarget();
 
         // Автосброс, если цель убежала/умерла
@@ -82,7 +84,7 @@ public class CameraControl : MonoBehaviour
 
     private void FreeRotation()
     {
-        Vector2 look = _input.lookDir * _sensitivity;
+        Vector2 look = _myInputs.lookDir * _sensitivity;
         _yaw += look.x;
         _pitch = Mathf.Clamp(_pitch - look.y, _minPitch, _maxPitch);
     }

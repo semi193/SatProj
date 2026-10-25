@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\cameracontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|c:\\users\\semi\\documents\\unity projects\\satproj\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|c:\\users\\semi\\documents\\unity projects\\satproj\\assets\\scripts\\player\\pause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\pause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|c:\\users\\semi\\documents\\unity projects\\satproj\\assets\\scripts\\player\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\player\\playerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\player\\pause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\pause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,8 +34,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerAttack.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Player\\PlayerAttack.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAttack.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Player\\PlayerAttack.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerAttack.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-25T13:28:47.684Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -44,7 +57,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMovement.cs",
               "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Player\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMovement.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwD8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwCsAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-16T15:29:51.601Z",
               "EditorCaption": ""
@@ -57,22 +70,10 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\CameraControl.cs",
               "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Player\\CameraControl.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\CameraControl.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAIwEoAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-16T15:49:09.825Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerInput.cs",
-              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Player\\PlayerInput.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerInput.cs",
-              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Player\\PlayerInput.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerInput.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA1wBEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T15:29:44.845Z"
             },
             {
               "$type": "Document",
@@ -82,13 +83,13 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Health.cs",
               "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Player\\Health.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\Health.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-16T18:08:40.605Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Pause.cs",
               "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Player\\Pause.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Pause.cs",
@@ -96,8 +97,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\Pause.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T19:07:37.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-16T19:07:37.049Z"
             },
             {
               "$type": "Document",
@@ -107,7 +107,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI.cs",
               "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\UI.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-16T18:33:00.661Z"
             }

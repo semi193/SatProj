@@ -1,14 +1,15 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Windows;
 
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Refs")]
     [SerializeField] Rigidbody _rb;
-    [SerializeField] PlayerInput _input;
     [SerializeField] CameraControl _camera;
     [SerializeField] Animator _animator;
+    [SerializeField] MyInputs _myInputs;
 
     [Header("Movement")]
     [SerializeField] float _walkSpeed = 3f;
@@ -23,20 +24,20 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         if (_rb == null) _rb = GetComponent<Rigidbody>();
-        if (_input == null) _input = GetComponent<PlayerInput>();
         if (_animator == null) _animator = GetComponent<Animator>();
+        if (_myInputs == null) _myInputs = GetComponent<MyInputs>();
     }
 
     private void FixedUpdate()
     {
-        Vector2 input = _input.moveDir;
+        Vector2 input = _myInputs.inputDir;
 
         // Ќаправление движени€ относительно камеры
         Vector3 moveDir = _camera.PlanarForward * input.y + _camera.PlanarRight * input.x;
         moveDir.y = 0f;
 
         bool hasInput = moveDir.sqrMagnitude > 0.01f;
-        bool running = hasInput && _input.runHeld;
+        bool running = hasInput && _myInputs.runHeld;
 
         Move(moveDir, hasInput, running, input);
 

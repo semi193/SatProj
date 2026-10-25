@@ -61,10 +61,11 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.84f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Player\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\Pause.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\Player\Health.cs" />
+    <Compile Include="Assets\Scripts\Player\MyInputs.cs" />
     <Compile Include="Assets\Scripts\UI.cs" />
     <Compile Include="Assets\Scripts\Player\CameraControl.cs" />
   </ItemGroup>
