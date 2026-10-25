@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Rigidbody _rb;
     [SerializeField] PlayerInput _input;
     [SerializeField] CameraControl _camera;
+    [SerializeField] Animator _animator;
 
     [Header("Movement")]
     [SerializeField] float _walkSpeed = 3f;
@@ -15,10 +16,13 @@ public class PlayerMovement : MonoBehaviour
     [Header("Rotation")]
     [SerializeField] float _rotationSpeed = 12f;   // градусов/сек
 
+    private static readonly int AnimMoveX = Animator.StringToHash("MoveX");
+
     private void Awake()
     {
         if (_rb == null) _rb = GetComponent<Rigidbody>();
         if (_input == null) _input = GetComponent<PlayerInput>();
+        if (_animator == null) _animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -57,6 +61,9 @@ public class PlayerMovement : MonoBehaviour
         }
 
         faceDir.y = 0f;
+
+        _animator.SetFloat(AnimMoveX, faceDir.sqrMagnitude);
+
         if (faceDir.sqrMagnitude < 0.0001f) return;
 
         float yaw = Mathf.Atan2(faceDir.x, faceDir.z) * Mathf.Rad2Deg;

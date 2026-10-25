@@ -18,7 +18,6 @@ public class CameraControl : MonoBehaviour
     [SerializeField] float _maxDistance = 20f;
     [SerializeField] float _breakDistance = 30f;     // если цель дальше Ч сбрасываем
     [SerializeField] float _maxAngle = 60f;          // конус поиска
-    [SerializeField] float _targetAimHeight = 1f;    // куда смотреть у цели
     [SerializeField] float _yawVelocity = 0f;
     [SerializeField] float _pitchVelocity = 0f;
     [SerializeField] LayerMask _targetMask;
@@ -89,7 +88,7 @@ public class CameraControl : MonoBehaviour
 
     private void LockedRotation()
     {
-        Vector3 aimPoint = Target.position + Vector3.up * _targetAimHeight;
+        Vector3 aimPoint = Target.position + Vector3.up;
         Vector3 dir = (aimPoint - _camera.transform.position).normalized;
 
         float targetYaw = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
