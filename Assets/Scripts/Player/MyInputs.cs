@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class MyInputs : MonoBehaviour
 {
+    public bool canMove = true;
+
     // camera
     public Vector2 lookDir { get; private set; }
     private bool _lockPressed;

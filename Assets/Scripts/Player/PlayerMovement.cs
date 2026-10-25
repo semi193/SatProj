@@ -39,9 +39,15 @@ public class PlayerMovement : MonoBehaviour
         bool hasInput = moveDir.sqrMagnitude > 0.01f;
         bool running = hasInput && _myInputs.runHeld;
 
-        Move(moveDir, hasInput, running, input);
-
-        Rotate(moveDir, running);
+        if (_myInputs.canMove)
+        {
+            Move(moveDir, hasInput, running, input);
+            Rotate(moveDir, running);
+        }
+        else
+        {
+            _rb.linearVelocity = new Vector3(0, _rb.linearVelocity.y, 0);
+        }
     }
 
     private void Move(Vector3 moveDir, bool hasInput, bool running, Vector3 input)

@@ -578,6 +578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 1542085338}
   _camera: {fileID: 330585545}
+  _myInputs: {fileID: 1542085344}
   _sensitivity: 0.15
   _offset: 3
   _minPitch: -60
@@ -1545,11 +1546,11 @@ GameObject:
   - component: {fileID: 1542085335}
   - component: {fileID: 1542085334}
   - component: {fileID: 1542085333}
-  - component: {fileID: 1542085340}
   - component: {fileID: 1542085339}
   - component: {fileID: 1542085341}
   - component: {fileID: 1542085342}
   - component: {fileID: 1542085343}
+  - component: {fileID: 1542085344}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -1572,6 +1573,7 @@ MonoBehaviour:
   _rb: {fileID: 1542085334}
   _camera: {fileID: 639801950}
   _animator: {fileID: 1542085343}
+  _myInputs: {fileID: 0}
   _walkSpeed: 6
   _runSpeed: 12
   _rotationSpeed: 720
@@ -1671,20 +1673,6 @@ MonoBehaviour:
   m_DefaultActionMap: 
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &1542085340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542085332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb28017c083033549a6ed2155d06f602, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <lookDir>k__BackingField: {x: 0, y: 0}
-  <_attack>k__BackingField: 0
 --- !u!114 &1542085341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1734,6 +1722,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1542085344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542085332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad0708655ae7d72469e3fcbb0f5cb1cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputDir: {x: 0, y: 0}
+  runHeld: 0
 --- !u!1 &1561609130
 GameObject:
   m_ObjectHideFlags: 0
