@@ -22,4 +22,7 @@ public class MyInputs : MonoBehaviour
     public bool runHeld;
     private void OnMove(InputValue v) => inputDir = v.Get<Vector2>();
     private void OnSprint(InputValue v) => runHeld = v.isPressed;
+
+    public void MoveOn() => canMove = true;
+    public void MoveOff() => canMove = false;
 }

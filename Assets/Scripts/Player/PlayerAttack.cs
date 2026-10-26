@@ -21,14 +21,10 @@ public class PlayerAttack : MonoBehaviour
     public void AttackOn()
     {
         _collider.enabled = true;
-        _myInputs.canMove = false;
-        Debug.Log($"Now canMove: {_myInputs.canMove}");
     }
 
     public void AttackOff()
     {
         _collider.enabled = false;
-        _myInputs.canMove = true;
-        Debug.Log($"Now canMove: {_myInputs.canMove}");
     }
 }
