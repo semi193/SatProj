@@ -87,7 +87,7 @@ public class CameraControl : MonoBehaviour
 
     private void LockedRotation()
     {
-        Vector3 aimPoint = Target.position + Vector3.up;
+        Vector3 aimPoint = Target.position;
         Vector3 dir = (aimPoint - _camera.transform.position).normalized;
 
         float targetYaw = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
@@ -117,7 +117,7 @@ public class CameraControl : MonoBehaviour
 
         foreach (var hit in hits)
         {
-            Vector3 to = hit.transform.position - _player.position;
+            Vector3 to = hit.transform.position - _camera.transform.position;
             to.y = 0f;
             if (to.sqrMagnitude < 0.001f) continue;
 
