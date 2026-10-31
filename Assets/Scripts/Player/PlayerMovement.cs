@@ -15,11 +15,26 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float _walkSpeed = 3f;
     [SerializeField] float _runSpeed = 6f;
 
-    [Header("Rotation")]
-    [SerializeField] float _rotationSpeed = 12f;   // градусов/сек
+    [Header("Dash")]
+    [SerializeField] float _dashForce = 12f;
+    [SerializeField] LayerMask _normalLayer;
+    [SerializeField] LayerMask _invisibleLayer;
 
+    [Header("Rotation")]
+    [SerializeField] float _rotationSpeed = 720f;
+
+    private static readonly int AnimDash = Animator.StringToHash("Dash");
     private static readonly int AnimMoveX = Animator.StringToHash("MoveX");
     private static readonly int AnimMoveSpeed = Animator.StringToHash("MoveSpeed");
+
+    Vector2 input => _myInputs.inputDir;
+    Vector3 moveDir => _camera.PlanarForward * input.y + _camera.PlanarRight * input.x;
+    bool hasInput => moveDir.sqrMagnitude > 0.01f;
+    bool running => hasInput && _myInputs.runHeld;
+    bool dashing = false;
+
+    int _invisibleLayerIndex => Mathf.RoundToInt(Mathf.Log(_invisibleLayer.value, 2));
+    int _normalLayerIndex => Mathf.RoundToInt(Mathf.Log(_normalLayer.value, 2));
 
     private void Awake()
     {
@@ -30,19 +45,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector2 input = _myInputs.inputDir;
-
-        // Направление движения относительно камеры
-        Vector3 moveDir = _camera.PlanarForward * input.y + _camera.PlanarRight * input.x;
-        moveDir.y = 0f;
-
-        bool hasInput = moveDir.sqrMagnitude > 0.01f;
-        bool running = hasInput && _myInputs.runHeld;
-
         if (_myInputs.canMove)
         {
-            Move(moveDir, hasInput, running, input);
-            Rotate(moveDir, running);
+            Rotate();
+            if (!dashing) Move();
         }
         else
         {
@@ -50,12 +56,28 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void Move(Vector3 moveDir, bool hasInput, bool running, Vector3 input)
+    private void OnDash()
+    {
+        if (_myInputs.canInput && !_myInputs._isPaused) _animator.SetTrigger(AnimDash);
+    }
+    private void Dash()
+    {
+        dashing = true;
+        gameObject.layer = _invisibleLayerIndex;
+        Vector3 velocity = hasInput ? moveDir.normalized * _dashForce : -_rb.transform.forward * _dashForce;
+        _rb.linearVelocity = velocity;
+    }
+    private void DashOff()
+    {
+        dashing = false;
+        gameObject.layer = _normalLayerIndex;
+    }
+
+    private void Move()
     {
         float speed = running ? _runSpeed : _walkSpeed;
 
         Vector3 velocity = hasInput ? moveDir.normalized * speed : Vector3.zero;
-        velocity.y = _rb.linearVelocity.y;
         _rb.linearVelocity = velocity;
 
         if (_camera.HasTarget && !running && input.y < 0)
@@ -67,17 +89,16 @@ public class PlayerMovement : MonoBehaviour
             _animator.SetFloat(AnimMoveSpeed, speed / _walkSpeed);
         }
 
-        _animator.SetFloat(AnimMoveX, velocity.sqrMagnitude);
+        _animator.SetFloat(AnimMoveX, hasInput ? 1 : 0);
     }
 
-    private void Rotate(Vector3 moveDir, bool running)
+    private void Rotate()
     {
         Vector3 faceDir = moveDir;
 
-        // С локом и БЕЗ бега — стрейф: смотрим на цель, двигаемся в сторону ввода
         if (_camera.HasTarget && !running)
         {
-            faceDir = _camera.Target.position - _rb.position; ;
+            faceDir = _camera.Target.position - _rb.position;
         }
 
         faceDir.y = 0f;
@@ -87,9 +108,7 @@ public class PlayerMovement : MonoBehaviour
         float yaw = Mathf.Atan2(faceDir.x, faceDir.z) * Mathf.Rad2Deg;
         Quaternion targetRot = Quaternion.Euler(0f, yaw, 0f);
 
-        // Плавный поворот через физику
-        Quaternion nextRot = Quaternion.RotateTowards(
-            _rb.rotation, targetRot, _rotationSpeed * Time.fixedDeltaTime);
+        Quaternion nextRot = Quaternion.RotateTowards(_rb.rotation, targetRot, _rotationSpeed * Time.fixedDeltaTime);
 
         _rb.MoveRotation(nextRot);
     }

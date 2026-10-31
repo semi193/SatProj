@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -15,7 +16,14 @@ public class PlayerAttack : MonoBehaviour
 
     void OnAttack()
     {
-        _animator.SetTrigger(AnimAttack);
+        if (_myInputs._isPaused) return;
+
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
+
+        if (_myInputs.canInput) _animator.SetTrigger(AnimAttack);
     }
 
     public void AttackOn()

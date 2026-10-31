@@ -5,7 +5,7 @@ public class CameraControl : MonoBehaviour
 {
     [Header("Refs")]
     [SerializeField] Transform _player;
-    [SerializeField] Camera _camera;                 // сама камера (ребЄнок пивота)
+    [SerializeField] Camera _camera;
     [SerializeField] MyInputs _myInputs;
 
     [Header("Look")]
@@ -18,20 +18,20 @@ public class CameraControl : MonoBehaviour
 
     [Header("Lock-On")]
     [SerializeField] float _maxDistance = 20f;
-    [SerializeField] float _breakDistance = 30f;     // если цель дальше Ч сбрасываем
-    [SerializeField] float _maxAngle = 60f;          // конус поиска
+    [SerializeField] float _breakDistance = 30f;
+    [SerializeField] float _maxAngle = 60f;
     [SerializeField] float _yawVelocity = 0f;
     [SerializeField] float _pitchVelocity = 0f;
     [SerializeField] LayerMask _targetMask;
 
     [Header("Collision")]
-    [SerializeField] LayerMask _collisionMask;        // стены, пол, статика
-    [SerializeField] float _collisionRadius = 0.25f;  // радиус Ђшарикаї камеры
-    [SerializeField] float _collisionPadding = 0.05f; // зазор до стены
-    [SerializeField] float _minDistance = 0.3f;       // чтобы камера не въехала в игрока
+    [SerializeField] LayerMask _collisionMask;
+    [SerializeField] float _collisionRadius = 0.25f;
+    [SerializeField] float _collisionPadding = 0.05f;
+    [SerializeField] float _minDistance = 0.3f;
 
-    private Vector3 _cameraLocalOffset;   // стартовое смещение камеры от пивота
-    private float _currentDistance;       // текуща€ дистанци€ (дл€ сглаживани€)
+    private Vector3 _cameraLocalOffset;
+    private float _currentDistance;
 
     
 
@@ -41,7 +41,6 @@ public class CameraControl : MonoBehaviour
     private float _yaw;
     private float _pitch;
 
-    // √оризонтальные оси камеры Ч используютс€ движением относительно камеры
     public Vector3 PlanarForward => Quaternion.Euler(0f, _yaw, 0f) * Vector3.forward;
     public Vector3 PlanarRight => Quaternion.Euler(0f, _yaw, 0f) * Vector3.right;
 
@@ -58,11 +57,9 @@ public class CameraControl : MonoBehaviour
 
     private void Update()
     {
-        // ѕереключение лока
         if (_myInputs.ConsumeLockPressed())
             Target = HasTarget ? null : FindTarget();
 
-        // јвтосброс, если цель убежала/умерла
         if (HasTarget)
         {
             float dist = Vector3.Distance(_player.position, Target.position);
@@ -80,7 +77,6 @@ public class CameraControl : MonoBehaviour
         UpdateCameraCollision();
     }
 
-    // ---------- ¬ращение камеры ----------
 
     private void FreeRotation()
     {
@@ -108,7 +104,6 @@ public class CameraControl : MonoBehaviour
         transform.rotation = Quaternion.Euler(_pitch, _yaw, 0f);
     }
 
-    // ---------- ѕоиск цели ----------
 
     private Transform FindTarget()
     {
@@ -129,7 +124,6 @@ public class CameraControl : MonoBehaviour
             float angle = Vector3.Angle(camFwd, to);
             if (angle > _maxAngle) continue;
 
-            // „ем ближе к центру экрана и чем ближе враг Ч тем лучше
             float score = angle + to.magnitude * 0.5f;
             if (score < bestScore)
             {
@@ -145,7 +139,6 @@ public class CameraControl : MonoBehaviour
         float desired = _cameraLocalOffset.magnitude;
         if (desired < 0.001f) return;
 
-        // Ќаправление и точка старта Ч в мировых координатах
         Vector3 origin = transform.position;
         Vector3 worldDir = transform.TransformDirection(_cameraLocalOffset.normalized);
 
@@ -155,17 +148,14 @@ public class CameraControl : MonoBehaviour
                                out RaycastHit hit, desired,
                                _collisionMask, QueryTriggerInteraction.Ignore))
         {
-            // hit.distance Ч дистанци€, на которой шарик коснулс€ поверхности
             targetDistance = Mathf.Max(hit.distance - _collisionPadding, _minDistance);
         }
 
-        // —глаживание: быстро прижимаемс€ к стене, плавно отъезжаем обратно
         if (targetDistance < _currentDistance)
-            _currentDistance = targetDistance;                          // мгновенно прижались
+            _currentDistance = targetDistance;
         else
             _currentDistance = Mathf.SmoothDamp(_currentDistance, targetDistance, ref _distanceVelocity, _smoothTime);
 
-        // —тавим камеру в мировую позицию Ч Unity сам пересчитает localPosition
         _camera.transform.position = origin + worldDir * _currentDistance;
     }
 }
