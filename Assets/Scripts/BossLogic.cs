@@ -29,8 +29,8 @@ public class BossLogic : MonoBehaviour
     private static readonly int AnimUlt = Animator.StringToHash("Ult");
 
     private float _windowTime = 0f;
-    private float _distance2 => (_player.position - gameObject.transform.position).sqrMagnitude;
-    private bool _near => _distance2 < _meleeDistance * _meleeDistance;
+    private float _distance => Vector3.Distance(transform.position, _player.transform.position);
+    private bool _near => _distance < _meleeDistance;
     private bool _ultFlag = false;
     private bool _ultUsed = false;
     private bool _ultUsed2 = false;
@@ -120,9 +120,9 @@ public class BossLogic : MonoBehaviour
 
     private Vector3 See()
     {
-        Vector3 origin = gameObject.transform.position;
+        Vector3 origin = gameObject.transform.position + Vector3.up;
         Vector3 dir = (_player.position - gameObject.transform.position).normalized;
-        if (Physics.Raycast(origin, dir, _seeDistance, _obstacleMask)) return Vector3.zero;
+        if (Physics.Raycast(origin, dir, _seeDistance, _obstacleMask) || _distance > _seeDistance) return Vector3.zero;
         else return dir;
     }
 

@@ -1,12 +1,377 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\ui\\mainmenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\mainmenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\events\\voideventchannel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\events\\voideventchannel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\bosslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bosslogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|c:\\users\\semi\\documents\\unity projects\\satproj\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\player\\myinputs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\myinputs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\player\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\ui\\sceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\sceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\ui\\pausemenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\pausemenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\ui\\musicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\musicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\ui\\menunavigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\menunavigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\ui\\healthui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\healthui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\ui\\gamestatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\gamestatemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\ui\\endgameui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\endgameui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\player\\cameracontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\cameracontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\events\\sceneloadeventchannel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\events\\sceneloadeventchannel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\events\\healtheventchannel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\events\\healtheventchannel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\rotatetocam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rotatetocam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\emissionfix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\emissionfix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\assets\\scripts\\closedoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04774AE8-A7EF-209A-BE02-00FB08DC4563}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\closedoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Weapon.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Weapon.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapon.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Weapon.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Weapon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:28:36.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SoundManager.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\SoundManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SoundManager.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\SoundManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SoundManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:28:34.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RotateToCam.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\RotateToCam.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\RotateToCam.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\RotateToCam.cs",
+              "RelativeToolTip": "Assets\\Scripts\\RotateToCam.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:28:32.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Health.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Health.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Health.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Health.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Health.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:28:28.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EmissionFix.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\EmissionFix.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EmissionFix.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\EmissionFix.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EmissionFix.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:28:25.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CloseDoor.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\CloseDoor.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CloseDoor.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\CloseDoor.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CloseDoor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:28:23.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BossLogic.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\BossLogic.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BossLogic.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\BossLogic.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BossLogic.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:28:22.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SceneLoader.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\UI\\SceneLoader.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\SceneLoader.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\UI\\SceneLoader.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\SceneLoader.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:28:18.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PauseMenuUI.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\UI\\PauseMenuUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\PauseMenuUI.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\UI\\PauseMenuUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\PauseMenuUI.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwC0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:28:17.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MusicManager.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\UI\\MusicManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\MusicManager.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\UI\\MusicManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\MusicManager.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAADwvygAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:28:15.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MenuNavigation.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\UI\\MenuNavigation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\MenuNavigation.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\UI\\MenuNavigation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\MenuNavigation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:28:13.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainMenuUI.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\UI\\MainMenuUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\MainMenuUI.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\UI\\MainMenuUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\MainMenuUI.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:28:12.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HealthUI.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\UI\\HealthUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\HealthUI.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\UI\\HealthUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\HealthUI.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwBMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:28:09.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GameStateManager.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\UI\\GameStateManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\GameStateManager.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\UI\\GameStateManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\GameStateManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:28:08.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EndGameUI.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\UI\\EndGameUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\EndGameUI.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\UI\\EndGameUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\EndGameUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:28:05.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAADwvzwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:28:02.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlayerAttack.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Player\\PlayerAttack.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerAttack.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Player\\PlayerAttack.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerAttack.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:28:01.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MyInputs.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Player\\MyInputs.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\MyInputs.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Player\\MyInputs.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\MyInputs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:27:59.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CameraControl.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Player\\CameraControl.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\CameraControl.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Player\\CameraControl.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\CameraControl.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAgwJ0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:27:57.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VoidEventChannel.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Events\\VoidEventChannel.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Events\\VoidEventChannel.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Events\\VoidEventChannel.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Events\\VoidEventChannel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:27:54.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SceneLoadEventChannel.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Events\\SceneLoadEventChannel.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Events\\SceneLoadEventChannel.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Events\\SceneLoadEventChannel.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Events\\SceneLoadEventChannel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:27:51.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HealthEventChannel.cs",
+              "DocumentMoniker": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Events\\HealthEventChannel.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Events\\HealthEventChannel.cs",
+              "ToolTip": "C:\\Users\\semi\\Documents\\Unity Projects\\SatProj\\Assets\\Scripts\\Events\\HealthEventChannel.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Events\\HealthEventChannel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T03:27:43.768Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -463,7 +463,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.4, z: -14.5}
-  m_LocalScale: {x: 10, y: 4, z: 0.1}
+  m_LocalScale: {x: 20, y: 4, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 988318163}
@@ -487,6 +487,9 @@ MonoBehaviour:
   _player:
     serializedVersion: 2
     m_Bits: 64
+  _playerInv:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!65 &104793017
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3336,7 +3339,7 @@ MonoBehaviour:
   _speed: 6
   _meleeDistance: 2
   _rotationSpeed: 720
-  _seeDistance: 10
+  _seeDistance: 50
   _minWindowTime: 2
   _maxWindowTime: 4
 --- !u!54 &1236700720
@@ -3378,7 +3381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7677799fcea5961489ec3864f7afc004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 300
   maxHealth: 300
   _animator: {fileID: 0}
   _soundManager: {fileID: 0}
