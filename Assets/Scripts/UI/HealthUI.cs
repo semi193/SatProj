@@ -19,7 +19,6 @@ public class HealthUI : MonoBehaviour
         if (_healthEventChannel != null)
         {
             _healthEventChannel.OnHealthChanged += UpdateTargetHealth;
-            _healthEventChannel.OnDied += HandleDeath;
         }
     }
 
@@ -28,7 +27,6 @@ public class HealthUI : MonoBehaviour
         if (_healthEventChannel != null)
         {
             _healthEventChannel.OnHealthChanged -= UpdateTargetHealth;
-            _healthEventChannel.OnDied -= HandleDeath;
         }
     }
 
@@ -53,10 +51,5 @@ public class HealthUI : MonoBehaviour
 
         _currentFillAmount = Mathf.SmoothDamp(_currentFillAmount, _targetFillAmount, ref _velocity, _smoothTime);
         _healthBarFill.fillAmount = _currentFillAmount;
-    }
-
-    private void HandleDeath()
-    {
-        Debug.Log("UI: Игрок умер.");
     }
 }
